@@ -1,47 +1,39 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f8ff;
-  text-align: center;
-  padding: 20px;
+function openReport() {
+  window.open("documents/Final_Report.pdf", "_blank");
 }
 
-h1 {
-  color: #0a58ca;
+function openCertificate() {
+  window.open("documents/Certificate.pdf", "_blank");
 }
 
-.info {
-  margin-bottom: 25px;
-}
+function showDay(day) {
+  const content = document.getElementById("content");
 
-.grid {
-  max-width: 900px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-}
+  const diary = {
 
-button {
-  padding: 12px;
-  border: none;
-  background: white;
-  border-radius: 12px;
-  font-size: 14px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+day1: `<h2>Day 1</h2><p>Introduction to web development and frontend technologies.</p>`,
+day2: `<h2>Day 2</h2><p>HTML basics: structure, tags, headings, paragraphs.</p>`,
+day3: `<h2>Day 3</h2><p>HTML lists, tables, images.</p>`,
+day4: `<h2>Day 4</h2><p>HTML forms and input elements.</p>`,
+day5: `<h2>Day 5</h2><p>CSS introduction: colors, fonts, backgrounds.</p>`,
+day6: `<h2>Day 6</h2><p>CSS box model and spacing.</p>`,
+day7: `<h2>Day 7</h2><p>CSS flexbox and responsive layouts.</p>`,
+day8: `<h2>Day 8</h2><p>Bootstrap grid system.</p>`,
+day9: `<h2>Day 9</h2><p>Bootstrap components like cards and navbars.</p>`,
+day10: `<h2>Day 10</h2><p>Bootstrap forms and modals.</p>`,
+day11: `<h2>Day 11</h2><p>JavaScript basics and variables.</p>`,
+day12: `<h2>Day 12</h2><p>JavaScript conditional statements.</p>`,
+day13: `<h2>Day 13</h2><p>JavaScript loops.</p>`,
+day14: `<h2>Day 14</h2><p>JavaScript functions.</p>`,
+day15: `<h2>Day 15</h2><p>DOM manipulation.</p>`,
+day16: `<h2>Day 16</h2><p>JavaScript events.</p>`,
+day17: `<h2>Day 17</h2><p>Form validation using JavaScript.</p>`,
+day18: `<h2>Day 18</h2><p>Mini project planning.</p>`,
+day19: `<h2>Day 19</h2><p>Mini project using HTML & CSS.</p>`,
+day20: `<h2>Day 20</h2><p>Bootstrap integration in project.</p>`,
+day21: `<h2>Day 21</h2><p>JavaScript integration in project.</p>`,
+day22: `<h2>Day 22</h2><p>Final review and GitHub deployment.</p>`
+  };
 
-button:hover {
-  background: #0a58ca;
-  color: white;
-}
-
-.content-box {
-  margin: 30px auto;
-  max-width: 900px;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  content.innerHTML = diary[day];
 }
