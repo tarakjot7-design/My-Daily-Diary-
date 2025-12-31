@@ -47,3 +47,18 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: left;
 }
+function showReport() {
+  document.getElementById("content").innerHTML = `
+    <h2>Final Report</h2>
+    <iframe src="documents/Final_Report.pdf"
+            width="100%" height="600px"></iframe>
+  `;
+}
+
+function showCertificate() {
+  document.getElementById("content").innerHTML = `
+    <h2>Certificate</h2>
+    <iframe src="documents/Certificate.pdf"
+            width="100%" height="600px"></iframe>
+  `;
+}
