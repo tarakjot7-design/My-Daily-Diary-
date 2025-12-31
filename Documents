@@ -1,1 +1,3 @@
-Final_report.pdf
+git add documents/
+git commit -m "Added report and certificate"
+git push
