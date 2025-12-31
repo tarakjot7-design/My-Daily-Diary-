@@ -1,5 +1,5 @@
 function openReport() {
-  window.open("Final_Report.pdf", "_blank");
+  window.open("Final_report.pdf", "_blank");
 }
 
 function openCertificate() {
