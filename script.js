@@ -1,9 +1,9 @@
 function openReport() {
-  window.open("documents/Final_Report.pdf", "_blank");
+  window.open("Final_Report.pdf", "_blank");
 }
 
 function openCertificate() {
-  window.open("documents/Certificate.pdf", "_blank");
+  window.open("Certificate.pdf", "_blank");
 }
 
 function showDay(day) {
