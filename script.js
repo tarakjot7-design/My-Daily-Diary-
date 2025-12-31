@@ -10,7 +10,13 @@ function showContent(day) {
       <h2>Certificate</h2>
       <p>Training completion certificate uploaded here.</p>
     `,
+function openReport() {
+  window.open("documents/Final_Report.pdf", "_blank");
+}
 
+function openCertificate() {
+  window.open("documents/Certificate.pdf", "_blank");
+}
     day1: `
       <h2>Day 1</h2>
       <p><b>Topic:</b> Introduction to Web Development</p>
