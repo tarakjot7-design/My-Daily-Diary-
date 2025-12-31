@@ -7,24 +7,39 @@
 </head>
 <body>
 
-  <h1>Training Diary </h1>
+  <h1>Training Diary</h1>
   
-
   <div class="grid">
-    <button onclick="showContent('final')">Final Report</button>
-    <button onclick="showContent('certificate')">Certificate</button>
+    <button onclick="openReport()">Final Report</button>
+    <button onclick="openCertificate()">Certificate</button>
 
-    <!-- Days -->
-    <script>
-      for(let i=1;i<=30;i++){
-        document.write(`<button onclick="showContent('day${i}')">Day ${i}</button>`);
-      }
-    </script>
+    <button onclick="showDay('day1')">Day 1</button>
+    <button onclick="showDay('day2')">Day 2</button>
+    <button onclick="showDay('day3')">Day 3</button>
+    <button onclick="showDay('day4')">Day 4</button>
+    <button onclick="showDay('day5')">Day 5</button>
+    <button onclick="showDay('day6')">Day 6</button>
+    <button onclick="showDay('day7')">Day 7</button>
+    <button onclick="showDay('day8')">Day 8</button>
+    <button onclick="showDay('day9')">Day 9</button>
+    <button onclick="showDay('day10')">Day 10</button>
+    <button onclick="showDay('day11')">Day 11</button>
+    <button onclick="showDay('day12')">Day 12</button>
+    <button onclick="showDay('day13')">Day 13</button>
+    <button onclick="showDay('day14')">Day 14</button>
+    <button onclick="showDay('day15')">Day 15</button>
+    <button onclick="showDay('day16')">Day 16</button>
+    <button onclick="showDay('day17')">Day 17</button>
+    <button onclick="showDay('day18')">Day 18</button>
+    <button onclick="showDay('day19')">Day 19</button>
+    <button onclick="showDay('day20')">Day 20</button>
+    <button onclick="showDay('day21')">Day 21</button>
+    <button onclick="showDay('day22')">Day 22</button>
   </div>
 
   <div id="content" class="content-box">
-    <h2>Select a Day</h2>
-    <p>Click on any day to view the training diary.</p>
+    <h2>Welcome</h2>
+    <p>Select any day to view training details.</p>
   </div>
 
   <script src="script.js"></script>
